@@ -57,7 +57,7 @@ contract SimpleDarkPool {
     mapping(address => uint256) public operatorStake;
 
     address public owner;
-    uint256 public constant MIN_OPERATOR_STAKE = 1 ether;
+    uint256 public constant MIN_OPERATOR_STAKE = 0.001 ether;
     uint256 public constant BATCH_TIMEOUT = 1 hours;
 
     modifier onlyOwner() {
