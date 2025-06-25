@@ -1,0 +1,21 @@
+{
+    "name": "darkpool-scripts",
+    "version": "1.0.0",
+    "description": "Testing scripts for DarkPool contracts",
+    "main": "index.js",
+    "scripts": {
+        "test": "node final-sepolia-test.js",
+        "demo": "node testnet-demo.js"
+    },
+    "dependencies": {
+        "ethers": "^6.8.0"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "ethereum",
+        "darkpool",
+        "testing"
+    ],
+    "author": "",
+    "license": "MIT"
+}
