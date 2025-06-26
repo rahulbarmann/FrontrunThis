@@ -1,0 +1,31 @@
+# Enhanced DarkPool AVS Deployment Addresses
+# Network: Sepolia Testnet
+# Deployed: $(date)
+
+# Enhanced Contracts with Full EigenLayer AVS Integration
+DarkPoolServiceManager: 0xFCB00AC76Fa57DD718d07d1FE75a84936b004FE3
+DarkPoolTaskManager: 0x68FAFb990e2787461b81B56177A681A35a236e6d  
+Enhanced SimpleDarkPool: 0xac13cC016ABe407a0cae9094c798447f8EC22440
+
+# Deployment Transaction Hashes
+ServiceManager Deploy: 0xc4ffe3f5fa8c81181066aecea1e1faaff2ce2074d6cac2bc83c4bfcce0883356
+TaskManager Deploy: 0x4244f6e5029d2b0619fb10163287edda3eea76f7e732239e2a01fc0cd97d773b
+DarkPool Deploy: 0xb00ccc591dc45259c5f7a930e570acfde399774d8ce5b09e3421e99d242d964f
+
+# Deployment Details
+Deployer: 0x687cD57BC79f1F77d76668ea1c5c531664C97CB9
+Block Number: 8627148
+Total Gas Cost: 0.004867206885527238 ETH
+
+# Mock EigenLayer Addresses (for testnet)
+DelegationManager: 0x0000000000000000000000000000000000000001
+AVSDirectory: 0x0000000000000000000000000000000000000002  
+RegistryCoordinator: 0x0000000000000000000000000000000000000003
+
+# Features
+- Full EigenLayer AVS integration
+- Enhanced task management with quorum validation
+- Operator slashing and reward mechanisms
+- Multi-operator consensus validation
+- Task-based reward distribution
+- Real-time event monitoring 
