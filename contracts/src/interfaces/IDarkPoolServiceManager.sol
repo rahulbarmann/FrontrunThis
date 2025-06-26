@@ -10,6 +10,13 @@ interface IDarkPoolServiceManager {
     event OperatorRegistered(address indexed operator, uint256 stake);
     event OperatorDeregistered(address indexed operator);
     event StakeUpdated(address indexed operator, uint256 newStake);
+    event OperatorSlashed(address indexed operator, uint256 amount);
+    event RewardDistributed(address indexed operator, uint256 amount);
+    event TaskValidationRewarded(
+        uint32 indexed taskIndex,
+        address indexed operator,
+        uint256 reward
+    );
 
     /**
      * @dev Register as an operator with minimum stake
@@ -35,4 +42,25 @@ interface IDarkPoolServiceManager {
      * @dev Get operator stake amount
      */
     function getOperatorStake(address operator) external view returns (uint256);
+
+    /**
+     * @dev Record task validation by operator
+     */
+    function recordTaskValidation(uint32 taskIndex, address operator) external;
+
+    /**
+     * @dev Set reward amount for a task
+     */
+    function setTaskReward(
+        uint32 taskIndex,
+        uint256 rewardAmount
+    ) external payable;
+
+    /**
+     * @dev Distribute rewards to operators who validated tasks correctly
+     */
+    function distributeTaskReward(
+        uint32 taskIndex,
+        address[] calldata validOperators
+    ) external;
 }
